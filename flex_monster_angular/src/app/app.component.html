@@ -1,0 +1,17 @@
+<h1>Angular 7/Flexmonster</h1>
+
+<fm-pivot
+  #pivot
+  [componentFolder]="'https://cdn.flexmonster.com/'"
+  [toolbar]="true"
+  [width]="800"
+  [height]="450"
+  [report]="pivotReport"
+  [customizeCell]="onCustomizeCell"
+  [licenseKey]="licenseKey"
+  (ready)="onPivotReady($event)"
+  (reportcomplete)="onReportComplete($event)"
+>
+</fm-pivot>
+<h2 style="padding-left:300px;">Sales by Countries</h2>
+<div style="height:400px;" id="googlechart-container-1"></div>
