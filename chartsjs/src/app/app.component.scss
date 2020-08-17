@@ -1,0 +1,80 @@
+$buttonShadow: #ca6eca + 120;
+
+.main {
+  display: flex;
+  padding-top: 5%;
+
+  .section {
+    padding: 20px;
+  }
+
+  .section.census {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .data{
+    flex: 2;
+  }
+}
+
+p.error{
+  font-size: 13px;
+  color: red + 100;
+  margin: 5px 0;
+}
+
+h4 {
+  margin-bottom: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ca6eca;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+div.option-list {
+  padding-left: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+
+  button.option {
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 $buttonShadow;
+    margin: 7px 0;
+    background: #ca6eca;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .fas {
+      font-size: 1.2em;
+      margin-right: 10px;
+    }
+  }
+
+  button[disabled] {
+    background: #ca6eca;
+    box-shadow: none;
+    cursor: default;
+  }
+
+  button.selected {
+    background: #ca6eca + 50;
+
+  }
+
+  button:focus {
+    background: #ca6eca + 50;
+    outline: none;
+  }
+}

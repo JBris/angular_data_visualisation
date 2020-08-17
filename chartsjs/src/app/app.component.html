@@ -1,0 +1,21 @@
+<div class="main">
+
+    <div class="section census">
+      <h4>Age Demographics</h4>
+      <p>Select your age range</p>
+  
+      <div class="option-list">
+        <button class="option" *ngFor="let option of options; index as i" (click)="takeVote(i)" [ngClass]="{selected: option.selected}"
+                [disabled]="selectedOption && selectedOption !== option.value">
+          <i class="fas fa-check" *ngIf="option.selected"></i>
+          {{option.label}}
+        </button>
+      </div>
+       <p class="error">{{message}}</p>
+    </div>
+  
+    <div class="section data">
+      <app-charts [censusData]="censusData" (newEntry)="onNewEntry($event)"></app-charts>
+    </div>
+  
+  </div>
