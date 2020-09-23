@@ -10,6 +10,7 @@ An exploration of data visualization methods using Angular. Examples include:
 
 * [D3](angular_d3)
 * [ng-charts](ng_charts)
+* [MapBoxGL and DeckGL](mapboxgl_deckgl)
 * [charts.js](chartsjs)
 * [flexmonster](flex_monster_angular)
 * [fusioncharts](fusion_charts)
